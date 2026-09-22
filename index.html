@@ -26,7 +26,7 @@
     <main id="home">
       <section class="hero">
         <div class="hero-copy">
-          <h1><span>come</span><span>find your</span><span>island</span><span>rhythm.</span></h1>
+          <h1><span>move.</span><span>breathe.</span><span>become.</span></h1>
         </div>
         <div class="hero-visual" aria-label="Sri Lanka tropik sahil manzarası">
           <figure class="postcard postcard-left"><img src="images/polaroid_01.jpg" alt="Topialanka travel memory" /><figcaption>Ella, Sri Lanka<br />06°52′N 81°02′E</figcaption></figure>
@@ -39,15 +39,15 @@
 
       <section id="our-story" class="story section">
         <p class="eyebrow">The Topialanka experience</p>
-        <div><h2>More than a place<br />to <em>go.</em></h2><p class="story-text">To us, a good journey is less about ticking places off a list and more about noticing what changes when you slow down. We create the space for both.</p></div>
+        <div><h2>reset your<br /><em>rhythm.</em></h2><p class="story-text">To us, a good journey is less about ticking places off a list and more about noticing what changes when you slow down. We create the space for both.</p></div>
         <figure class="story-photo"><img src="images/morethanaplace_1800x1200.jpg?v=2" alt="Aerial view of Sri Lankan coast" /><figcaption>01 / Find the rhythm</figcaption></figure>
       </section>
 
       <section id="discover" class="journey-scroll">
         <div class="journey-title"><p class="eyebrow">Journeys to inspire</p><h2>Three ways<br />to feel the island.</h2><p>Scroll slowly. There is no rush here.</p></div>
-        <article class="journey-panel tea-panel"><div class="journey-image"><img src="images/tea%20country_1800x1200.jpg" alt="Tea country in Sri Lanka" /></div><div class="journey-caption"><p>01 / 03</p><h3>tea country</h3><span>Nuwara Eliya · Ella</span><p>Morning mist, train windows and an unhurried view.</p></div></article>
-        <article class="journey-panel coast-panel"><div class="journey-image"><img src="images/southernshores_1800x1200.jpg" alt="South coast of Sri Lanka" /></div><div class="journey-caption"><p>02 / 03</p><h3>southern shores</h3><span>Galle · Mirissa</span><p>Salt in the air and time stretched to the horizon.</p></div></article>
-        <article class="journey-panel wild-panel"><div class="journey-image"><img src="images/wildplaces_1800x1200.jpg" alt="Elephant in Sri Lankan wilderness" /></div><div class="journey-caption"><p>03 / 03</p><h3>wild places</h3><span>Yala · Udawalawe</span><p>The kind of quiet only a wide-open landscape can bring.</p></div></article>
+        <article class="journey-panel tea-panel"><div class="journey-image"><img src="images/tea%20country_1800x1200.jpg" alt="Tea country in Sri Lanka" /></div><div class="journey-caption"><h3>tea country</h3><span>Nuwara Eliya · Ella</span><p>Morning mist, train windows and an unhurried view.</p></div></article>
+        <article class="journey-panel coast-panel"><div class="journey-image"><img src="images/southernshores_1800x1200.jpg" alt="Curated wellness experience in Sri Lanka" /></div><div class="journey-caption"><p>Group Session / Private Session</p><h3 class="wellness-title">Curated Wellness<br />Experiences</h3><div class="meditation-offerings"><span>SOUND BATH EXPERIENCES</span><span>FOR GROUPS &amp; PRIVATE SESSIONS</span><span>CHAKRA HEALING WITH CRYSTALS &amp; STONES</span><span>GUIDED MEDITATION &amp; BREATHWORK</span><span>FOR GROUPS &amp; PRIVATE SESSIONS</span></div><p>Immersive experiences designed to restore balance, deepen connection and support your journey of wellbeing.</p><button class="button journey-button" type="button" data-booking-open>Book now <span>↗</span></button></div></article>
+        <article class="journey-panel wild-panel"><div class="journey-image"><img src="images/wildplaces_1800x1200.jpg" alt="Elephant in Sri Lankan wilderness" /></div><div class="journey-caption"><h3>wild places</h3><span>Yala · Udawalawe</span><p>The kind of quiet only a wide-open landscape can bring.</p></div></article>
       </section>
 
       <section class="quote"><div class="leaf">❋</div><blockquote>“Sometimes getting lost brings you closest to <em>yourself.</em>”</blockquote></section>
@@ -111,6 +111,52 @@
         <p class="contact-note">or <a href="https://instagram.com/topialanka" target="_blank" rel="noreferrer">send us a message on Instagram</a></p>
       </section>
     </main>
+
+    <section class="booking-modal" aria-hidden="true" aria-labelledby="booking-title">
+      <div class="booking-backdrop" data-booking-close></div>
+      <div class="booking-dialog" role="dialog" aria-modal="true">
+        <button class="booking-close" type="button" aria-label="Close booking form" data-booking-close>×</button>
+        <p class="eyebrow">Curated Wellness Experiences</p>
+        <h2 id="booking-title">book your<br /><em>experience.</em></h2>
+        <p class="booking-intro">Tell us a little about yourself and we will be in touch to shape your session.</p>
+
+        <form id="booking-form">
+          <input class="booking-honeypot" type="text" name="_honey" tabindex="-1" autocomplete="off" />
+          <div class="booking-fields">
+            <label>First name *<input name="firstName" type="text" autocomplete="given-name" required /></label>
+            <label>Last name *<input name="lastName" type="text" autocomplete="family-name" required /></label>
+            <label>Phone *<input name="phone" type="tel" autocomplete="tel" required /></label>
+            <label>Email *<input name="email" type="email" autocomplete="email" required /></label>
+          </div>
+
+          <label class="booking-select">Are you a corporate partner? *
+            <select name="corporatePartner" required>
+              <option value="" selected disabled>Select an option</option>
+              <option>Yes</option>
+              <option>No</option>
+              <option>I would like to know more</option>
+            </select>
+          </label>
+
+          <fieldset class="booking-interests">
+            <legend>Interests *</legend>
+            <label><input name="interests" type="checkbox" value="Sound Bath Experiences" /> <span>Sound Bath Experiences</span></label>
+            <label><input name="interests" type="checkbox" value="Chakra Healing with Crystals & Stones" /> <span>Chakra Healing with Crystals &amp; Stones</span></label>
+            <label><input name="interests" type="checkbox" value="Guided Meditation & Breathwork" /> <span>Guided Meditation &amp; Breathwork</span></label>
+            <label><input name="interests" type="checkbox" value="Group Session" /> <span>Group Session</span></label>
+            <label><input name="interests" type="checkbox" value="Private Session" /> <span>Private Session</span></label>
+          </fieldset>
+
+          <label class="booking-message">Anything else you would like to share?
+            <textarea name="message" rows="4" placeholder="Dates, group size or anything else we should know."></textarea>
+          </label>
+          <p class="booking-error" role="alert" aria-live="polite"></p>
+          <button class="button booking-submit" type="submit">Send booking request <span>↗</span></button>
+        </form>
+      </div>
+    </section>
+
+    <div class="booking-toast" role="status" aria-live="polite">Thank you. Your booking request is on its way.</div>
 
     <footer><a class="brand" href="#home" aria-label="Topialanka home"><img src="images/topialanka-14.png" alt="Topialanka" /></a><p>© <span id="year"></span> Topialanka. Made with love in Sri Lanka.</p><a href="#home">Back to top ↑</a></footer>
     <script src="script.js"></script>
