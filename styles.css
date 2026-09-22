@@ -15,6 +15,7 @@
 .journey-caption .meditation-offerings{font:500 clamp(.74rem,.9vw,.9rem)/1.45 'DM Mono',monospace;letter-spacing:.055em;text-transform:uppercase}.journey-caption .meditation-offerings span{display:block;font:inherit;letter-spacing:inherit;margin-bottom:.55rem}.journey-caption .meditation-offerings span:last-child{margin-bottom:0}.journey-caption .meditation-offerings span:before{content:'✦';display:inline-block;width:1.4em;color:var(--acid);letter-spacing:0}
 .journey-caption>p:last-of-type{font-size:.98rem;line-height:1.5;margin:1.4rem 0 0;max-width:290px}.journey-caption .journey-button{margin-top:1.4rem}
 .journey-caption h3.wellness-title{font-size:clamp(2.8rem,4.5vw,5.3rem);line-height:.88;letter-spacing:-.065em}
+.journey-caption button.journey-button{appearance:none;-webkit-appearance:none;border:0;text-align:left;cursor:pointer}
 :root{--paper:#f4ebca}
 .hero{background:#ec5930}
 .hero,.site-header{color:var(--paper)}.hero .scroll-note{color:var(--paper)}.hero-bottom i{border-color:var(--paper)}.postcard figcaption{color:var(--ink)}
